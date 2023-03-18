@@ -35,3 +35,15 @@ print(list2)
 print(list3)
 print(id(list2))
 print(id(list3))
+
+#5.字符串切片
+print("nihao"[2:4])
+
+#6.字符串格式化
+age = 28
+name = 'miles'
+print(f"My name is {name},My age is {age}")
+format_spec = "My name is {0:s},My age is {1:d}"
+print(format_spec.format(name,age))
+
+#7.
