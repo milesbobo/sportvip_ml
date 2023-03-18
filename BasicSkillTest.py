@@ -124,14 +124,21 @@
 
 #13.集合（Set）
 #14.推导式：
+# #15.函数，匿名函数
+# list_A = [1,2,3,4,5]
+# def map_fun(seq,f):
+#     return [f for i in seq]
+# list_B = map_fun(list_A,lambda i:i*2)
+# print(list_B)
 
+# #16.生成器:建一个对给定输入参数处理为平方的生成器
+# def square_num(num = 10):
+#     value = lambda x:x**2
+#     list_N = list(map(value,[i for i in range(num)]))
+#     yield list_N
+#
+# x = square_num()
+# for i in square_num(10):
+#     print(i)
 
-#7.生成器:建一个对给定输入参数处理为平方的生成器
-def square_num(num = 10):
-    value = lambda x:x**2
-    list = [value for i in range(num)]
-    yield list
-
-x = square_num()
-for i in square_num(10):
-    print(i)
+#17. 异常和错误处理
