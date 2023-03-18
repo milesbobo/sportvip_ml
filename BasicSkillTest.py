@@ -60,10 +60,17 @@
 #         continue
 #         print(f"It is None!")
 
-#8.三元表达式。
-list_A = [1,2,3,4,5,6,7,8,9,10]
-list_B = [(lambda i: (i if i <= 5 else 0)) for value in list_A]
-print(list_B)
+# #8.三元表达式。
+# list_A = [1,2,3,4,5,6,7,8,9,10]
+# list_B = [lambda i: i *2 for value in list_A]#列表推导式可以放lambda函数吗？-- 可以的
+# list_C = list(map(lambda i:i*2,[value for value in list_A]))
+# #lambda表达式和推导式的组合用法：
+# # ① 先使用列表推导式，生成一个列表。
+# # ② 使用map函数，把lambda函数作用于①生成的列表。
+# # ③ map返回一个迭代器对象，必须使用list()接收，不能直接用[]。
+# print(type(list_B))
+# print(list_B)
+# print(list_C)
 
 # #9.元组(tuple)。
 # tuple_A = 2,3,4
@@ -103,17 +110,20 @@ print(list_B)
 # dict_B = { key:value for key,value in zip(index,color)}
 # print(dict_B)
 
-#12.字典（dict）.
-color = ['red','blue','yellow','orange','green','white','black']
-index = [0,1,2,3,4,5,6]
-dict_A = { key:value for key,value in enumerate(color) if value != 'white'}
-print([i for i in dict_A.keys()])
-print([i for i in dict_A.values()])
-#字典的get方法和pop方法，对于不存在的键的处理。
-print(dict_A[1])
-print(dict_A.get(1))
-print(dict_A.get(100))
-print(dict_A.get(100,100))
+# #12.字典（dict）.
+# color = ['red','blue','yellow','orange','green','white','black']
+# index = [0,1,2,3,4,5,6]
+# dict_A = { key:value for key,value in enumerate(color) if value != 'white'}
+# print([i for i in dict_A.keys()])
+# print([i for i in dict_A.values()])
+# #字典的get方法和pop方法，对于不存在的键的处理。
+# print(dict_A[1])
+# print(dict_A.get(1))
+# print(dict_A.get(100))
+# print(dict_A.get(100,100))
+
+#13.集合（Set）
+#14.推导式：
 
 
 #7.生成器:建一个对给定输入参数处理为平方的生成器
